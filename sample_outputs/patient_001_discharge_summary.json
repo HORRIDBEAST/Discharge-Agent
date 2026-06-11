@@ -1,0 +1,428 @@
+{
+  "patient": {
+    "name": "John Smith",
+    "date_of_birth": "1955-03-14",
+    "mrn": "001-234-567",
+    "sex": "Male",
+    "age": "69"
+  },
+  "admission_date": "MISSING \u2014 clinician review required",
+  "discharge_date": "2024-11-02",
+  "principal_diagnosis": "CONFLICT DETECTED \u2014 clinician review required",
+  "secondary_diagnoses": [
+    "NSTEMI",
+    "type 2 diabetes mellitus",
+    "hypertension",
+    "hyperlipidaemia",
+    "diabetes",
+    "Type 2 diabetes mellitus",
+    "Hypertension"
+  ],
+  "hospital_course": "Patient underwent coronary angiography this morning. Findings: 85% stenosis of the right coronary artery (RCA). Procedure: Percutaneous coronary intervention (PCI) with drug-eluting stent to RCA. Post-procedure: stable, no complications.",
+  "procedures": [
+    "ECG",
+    "Percutaneous coronary intervention (PCI) with drug-eluting stent to RCA",
+    "Chest X-ray",
+    "coronary angiography"
+  ],
+  "reconciliation_report": {
+    "admission_medications": [
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Metformin 1000mg twice daily"
+      },
+      {
+        "name": "Lisinopril",
+        "dose": "10mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Lisinopril 10mg daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "40mg",
+        "frequency": "nightly",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Atorvastatin 40mg nightly"
+      },
+      {
+        "name": "Aspirin",
+        "dose": "81mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Aspirin 81mg daily"
+      }
+    ],
+    "discharge_medications": [
+      {
+        "name": "Aspirin",
+        "dose": "81mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "antiplatelet",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "1. Aspirin 81mg daily \u00b7 continue (antiplatelet)"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "dual antiplatelet therapy post-PCI",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "2. Clopidogrel 75mg daily \u00b7 continue for 12 months (dual antiplatelet therapy post-PCI)"
+      },
+      {
+        "name": "Bisoprolol",
+        "dose": "2.5mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "beta-blocker post-NSTEMI",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "3. Bisoprolol 2.5mg daily \u00b7 continue (beta-blocker post-NSTEMI)"
+      },
+      {
+        "name": "Lisinopril",
+        "dose": "10mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "ACE inhibitor, hypertension",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "4. Lisinopril 10mg daily \u00b7 continue (ACE inhibitor, hypertension)"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "80mg",
+        "frequency": "nightly",
+        "route": null,
+        "indication": "high-intensity statin (increased from 40mg)",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "5. Atorvastatin 80mg nightly \u00b7 high-intensity statin (increased from 40mg)"
+      },
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily",
+        "route": null,
+        "indication": "restart (was held peri-procedure)",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "6. Metformin 1000mg twice daily \u00b7 restart (was held peri-procedure)"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "dual antiplatelet post-PCI",
+        "source_document": "progress_note_day2.pdf",
+        "raw_text": "Added: Clopidogrel 75mg daily (dual antiplatelet post-PCI)"
+      },
+      {
+        "name": "Bisoprolol",
+        "dose": "2.5mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "heart rate control",
+        "source_document": "progress_note_day2.pdf",
+        "raw_text": "Added: Bisoprolol 2.5mg daily (heart rate control)"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "80mg",
+        "frequency": "nightly",
+        "route": null,
+        "indication": "high-intensity statin post-ACS",
+        "source_document": "progress_note_day2.pdf",
+        "raw_text": "Changed: Atorvastatin increased to 80mg nightly (high-intensity statin post-ACS)"
+      },
+      {
+        "name": "Aspirin",
+        "dose": "81mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "progress_note_day2.pdf",
+        "raw_text": "Aspirin 81mg daily \u00b7 continued"
+      },
+      {
+        "name": "Metformin",
+        "dose": null,
+        "frequency": null,
+        "route": null,
+        "indication": "Type 2 diabetes mellitus",
+        "source_document": "progress_note_day2.pdf",
+        "raw_text": "metformin held peri-procedure. Will restart metformin post-discharge."
+      },
+      {
+        "name": "Lisinopril",
+        "dose": null,
+        "frequency": null,
+        "route": null,
+        "indication": "Hypertension",
+        "source_document": "progress_note_day2.pdf",
+        "raw_text": "lisinopril continued."
+      }
+    ],
+    "changes": [
+      {
+        "medication_name": "Lisinopril",
+        "change_type": "unchanged",
+        "admission_value": null,
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Metformin",
+        "change_type": "unchanged",
+        "admission_value": null,
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Bisoprolol",
+        "change_type": "added",
+        "admission_value": null,
+        "discharge_value": "2.5mg daily",
+        "reason_documented": true,
+        "reason_text": "heart rate control",
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Clopidogrel",
+        "change_type": "added",
+        "admission_value": null,
+        "discharge_value": "75mg daily",
+        "reason_documented": true,
+        "reason_text": "dual antiplatelet post-PCI",
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Aspirin",
+        "change_type": "unchanged",
+        "admission_value": null,
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Atorvastatin",
+        "change_type": "dose_changed",
+        "admission_value": "40mg",
+        "discharge_value": "80mg",
+        "reason_documented": true,
+        "reason_text": "high-intensity statin post-ACS",
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      }
+    ],
+    "unresolved_flags": [],
+    "reconciliation_complete": true,
+    "notes": "Reconciliation complete"
+  },
+  "allergies": [
+    "Penicillin (anaphylaxis)",
+    "Sulfa (rash)",
+    "NKDA"
+  ],
+  "discharge_condition": "Stable",
+  "follow_up_instructions": [
+    "Cardiology clinic follow-up in 2 weeks",
+    "GP follow-up in 1 week for wound check and blood pressure review",
+    "Do NOT stop aspirin or clopidogrel without consulting cardiologist",
+    "Echocardiogram result to be followed up at cardiology clinic",
+    "Blood culture result to be reviewed by GP \u00b7 notify patient if any action required",
+    "Diabetic review with endocrinologist \u00b7 referral sent",
+    "Restart metformin post-discharge."
+  ],
+  "pending_results": [
+    "Troponin",
+    "2. Troponin - sent, pending",
+    "5. Continue aspirin, hold metformin pending contrast study",
+    "Blood culture",
+    "Echocardiogram",
+    "Pending:",
+    "- Blood culture: PENDING \u00b7 sent 2024-11-02, awaiting final results",
+    "- Echocardiogram: PENDING \u00b7 ordered, not yet resulted",
+    "Labs pending: Blood culture (sent due to fever spike \u00b7 preliminary, awaiting sensitivity)",
+    "Echocardiogram: ordered, not yet resulted."
+  ],
+  "conflicts_detected": [
+    {
+      "conflict_id": "f5da523c",
+      "field": "principal_diagnosis",
+      "source_1_doc": "admission_note.pdf",
+      "source_1_value": "acute coronary syndrome",
+      "source_1_evidence_text": "Likely acute coronary syndrome.",
+      "source_2_doc": "discharge_medications.pdf",
+      "source_2_value": "NSTEMI",
+      "source_2_evidence_text": "Bisoprolol 2.5mg daily \u00b7 continue (beta-blocker post-NSTEMI)",
+      "status": "clinician_review_required",
+      "resolution": null
+    }
+  ],
+  "missing_fields": [],
+  "clinician_review_flags": [
+    "Medication 'Clopidogrel' from 'progress_note_day2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'Bisoprolol' from 'progress_note_day2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'Atorvastatin' from 'progress_note_day2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'Aspirin' from 'progress_note_day2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'Metformin' from 'progress_note_day2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'Lisinopril' from 'progress_note_day2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "CONFLICT in 'principal_diagnosis': admission_note.pdf vs discharge_medications.pdf",
+    "Agent encountered unexpected error: 'charmap' codec can't encode characters in position 2-3: character maps to <undefined>"
+  ],
+  "hallucination_warnings": [],
+  "evidence_map": {
+    "demographics:name:John Smith": [
+      "4f212306"
+    ],
+    "demographics:date_of_birth:1955-03-14": [
+      "418f6ab8"
+    ],
+    "demographics:mrn:001-234-567": [
+      "b25e6447"
+    ],
+    "demographics:sex:Male": [
+      "5eba559a"
+    ],
+    "demographics:age:69": [
+      "91aa3e23"
+    ],
+    "diagnosis:principal:acute coronary syndrome": [
+      "7728230b"
+    ],
+    "diagnosis:secondary:NSTEMI": [
+      "0cca170d"
+    ],
+    "diagnosis:secondary:type 2 diabetes mellitus": [
+      "5a3f3216"
+    ],
+    "diagnosis:secondary:hypertension": [
+      "f4495330"
+    ],
+    "diagnosis:secondary:hyperlipidaemia": [
+      "e7464aa4"
+    ],
+    "medication:Metformin": [
+      "94ff2b09",
+      "ae812eca",
+      "66688aa1"
+    ],
+    "medication:Lisinopril": [
+      "c2d7f2a0",
+      "90a5a760",
+      "edc53035"
+    ],
+    "medication:Atorvastatin": [
+      "377fad71",
+      "f0361cd5",
+      "c8ad1d80"
+    ],
+    "medication:Aspirin": [
+      "753e992c",
+      "5c82f908",
+      "6b782d1e"
+    ],
+    "hospital_course": [
+      "1ebedb5f",
+      "d0d8c887",
+      "482c2e8f",
+      "761a030d"
+    ],
+    "procedure:ECG": [
+      "0500fc62"
+    ],
+    "procedure:Chest X-ray": [
+      "050af5ac"
+    ],
+    "allergy:Penicillin": [
+      "d6adf1b4"
+    ],
+    "allergy:Sulfa": [
+      "a1579444"
+    ],
+    "diagnosis:principal:NSTEMI": [
+      "ae44d81f",
+      "251bbc1e"
+    ],
+    "diagnosis:principal:hypertension": [
+      "8effd688"
+    ],
+    "diagnosis:secondary:diabetes": [
+      "fb0f8e03"
+    ],
+    "medication:Clopidogrel": [
+      "b1b55b0b",
+      "1dfa63d4"
+    ],
+    "medication:Bisoprolol": [
+      "a2dd21fb",
+      "25353bbe"
+    ],
+    "allergy:NKDA": [
+      "e262ca09",
+      "1e21c850"
+    ],
+    "discharge_condition:Stable": [
+      "a9d35ea6",
+      "dd089dad"
+    ],
+    "follow_up:Cardiology clinic follow-up in 2 weeks": [
+      "2600a76b"
+    ],
+    "follow_up:GP follow-up in 1 week for wound check and blood pressure re": [
+      "98bae5ba"
+    ],
+    "follow_up:Do NOT stop aspirin or clopidogrel without consulting cardio": [
+      "6a91cddb"
+    ],
+    "follow_up:Echocardiogram result to be followed up at cardiology clinic": [
+      "d3e999a4"
+    ],
+    "follow_up:Blood culture result to be reviewed by GP \u00b7 notify patient i": [
+      "0335e6df"
+    ],
+    "follow_up:Diabetic review with endocrinologist \u00b7 referral sent": [
+      "9023cfe1"
+    ],
+    "diagnosis:secondary:Type 2 diabetes mellitus": [
+      "ba441220"
+    ],
+    "diagnosis:secondary:Hypertension": [
+      "54a7e8b2"
+    ],
+    "procedure:coronary angiography": [
+      "3d104868"
+    ],
+    "procedure:Percutaneous coronary intervention (PCI) with drug-eluting stent to RCA": [
+      "16f1ece6"
+    ],
+    "follow_up:Restart metformin post-discharge.": [
+      "3261a790"
+    ]
+  },
+  "agent_iterations": 6,
+  "escalated": true,
+  "draft_status": "draft_for_clinician_review"
+}

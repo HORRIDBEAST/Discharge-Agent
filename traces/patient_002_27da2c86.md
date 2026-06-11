@@ -1,0 +1,191 @@
+# Agent Trace — Patient: patient_002
+
+Session: `27da2c86-75d7-458c-865f-6d18e30dd850`
+
+---
+
+## Step 1 — PLANNING
+
+**Reasoning:** Starting discharge summary generation for patient 'patient_002'. Found 4 source documents. Will process each document, extract clinical facts, reconcile medications, detect conflicts, and compose the discharge summary.
+
+**Decision:** Begin document ingestion and extraction
+
+**Next Action:** Read and classify all source documents
+
+---
+
+## Step 2 — EXTRACTING
+
+**Reasoning:** Document 'sample_data\patient_002\admission_note.pdf' has not been processed. Reading it and extracting all clinical facts.
+
+**Tool:** `pdf_reader`
+
+**Decision:** Read document
+
+**Next Action:** Extract from sample_data\patient_002\admission_note.pdf
+
+---
+
+## Step 3 — EXTRACTING
+
+**Reasoning:** Document classified as 'admission_note'. Will run targeted extractors for this document type.
+
+**Tool:** `clinical_extractor`
+
+**Result:** Document type: admission_note, pages: 1
+
+**Decision:** Run 'admission_note' extractors
+
+**Next Action:** Extract clinical facts from document
+
+---
+
+## Step 4 — EXTRACTING
+
+**Reasoning:** Extraction from 'admission_note.pdf' complete.
+
+**Result:** Diagnoses: 3, Medications: 5, Pending results: 0
+
+**Decision:** Merge extraction results into working memory
+
+**Next Action:** Process next document or move to reconciliation
+
+---
+
+## Step 5 — EXTRACTING
+
+**Reasoning:** Document 'sample_data\patient_002\discharge_medications.pdf' has not been processed. Reading it and extracting all clinical facts.
+
+**Tool:** `pdf_reader`
+
+**Decision:** Read document
+
+**Next Action:** Extract from sample_data\patient_002\discharge_medications.pdf
+
+---
+
+## Step 6 — EXTRACTING
+
+**Reasoning:** Document classified as 'medication_record'. Will run targeted extractors for this document type.
+
+**Tool:** `clinical_extractor`
+
+**Result:** Document type: medication_record, pages: 1
+
+**Decision:** Run 'medication_record' extractors
+
+**Next Action:** Extract clinical facts from document
+
+---
+
+## Step 7 — EXTRACTING
+
+**Reasoning:** Extraction from 'discharge_medications.pdf' complete.
+
+**Result:** Diagnoses: 3, Medications: 5, Pending results: 1
+
+**Decision:** Merge extraction results into working memory
+
+**Next Action:** Process next document or move to reconciliation
+
+---
+
+## Step 8 — EXTRACTING
+
+**Reasoning:** Document 'sample_data\patient_002\progress_note_1.pdf' has not been processed. Reading it and extracting all clinical facts.
+
+**Tool:** `pdf_reader`
+
+**Decision:** Read document
+
+**Next Action:** Extract from sample_data\patient_002\progress_note_1.pdf
+
+---
+
+## Step 9 — EXTRACTING
+
+**Reasoning:** Document classified as 'progress_note'. Will run targeted extractors for this document type.
+
+**Tool:** `clinical_extractor`
+
+**Result:** Document type: progress_note, pages: 1
+
+**Decision:** Run 'progress_note' extractors
+
+**Next Action:** Extract clinical facts from document
+
+---
+
+## Step 10 — EXTRACTING
+
+**Reasoning:** Extraction from 'progress_note_1.pdf' complete.
+
+**Result:** Diagnoses: 4, Medications: 2, Pending results: 2
+
+**Decision:** Merge extraction results into working memory
+
+**Next Action:** Process next document or move to reconciliation
+
+---
+
+## Step 11 — EXTRACTING
+
+**Reasoning:** Document 'sample_data\patient_002\progress_note_2.pdf' has not been processed. Reading it and extracting all clinical facts.
+
+**Tool:** `pdf_reader`
+
+**Decision:** Read document
+
+**Next Action:** Extract from sample_data\patient_002\progress_note_2.pdf
+
+---
+
+## Step 12 — EXTRACTING
+
+**Reasoning:** Document classified as 'progress_note'. Will run targeted extractors for this document type.
+
+**Tool:** `clinical_extractor`
+
+**Result:** Document type: progress_note, pages: 1
+
+**Decision:** Run 'progress_note' extractors
+
+**Next Action:** Extract clinical facts from document
+
+---
+
+## Step 13 — EXTRACTING
+
+**Reasoning:** Extraction from 'progress_note_2.pdf' complete.
+
+**Result:** Diagnoses: 2, Medications: 2, Pending results: 2
+
+**Decision:** Merge extraction results into working memory
+
+**Next Action:** Process next document or move to reconciliation
+
+---
+
+## Step 14 — RECONCILING
+
+**Reasoning:** All documents processed. Found 5 admission medications and 9 discharge medications. Running reconciliation to identify changes, additions, and discontinuations.
+
+**Tool:** `medication_reconciliation`
+
+**Decision:** Run medication reconciliation
+
+**Next Action:** Identify medication changes
+
+---
+
+## Step 15 — RECONCILING
+
+**Reasoning:** Medication reconciliation returned results.
+
+**Result:** Reconciliation complete. 7 changes found, 1 requiring clinician review.
+
+**Decision:** Record reconciliation report
+
+**Next Action:** Check for drug interactions
+
+**Warnings:**

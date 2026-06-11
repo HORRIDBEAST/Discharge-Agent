@@ -1,0 +1,387 @@
+{
+  "patient": {
+    "name": "Margaret Chen",
+    "date_of_birth": "1948-07-22",
+    "mrn": "002-456-789",
+    "sex": "Female",
+    "age": "76"
+  },
+  "admission_date": "MISSING \u2014 clinician review required",
+  "discharge_date": "2024-11-08",
+  "principal_diagnosis": "Delirium \u00b7 likely precipitated by urinary tract infection vs medication effect",
+  "secondary_diagnoses": [
+    "Atrial fibrillation \u00b7 rate controlled",
+    "Supratherapeutic INR: INR 4.8 on admission (TARGET: 2.0-3.0)",
+    "supratherapeutic INR",
+    "UTI",
+    "atrial fibrillation",
+    "Supratherapeutic INR",
+    "Atrial fibrillation",
+    "Falls risk"
+  ],
+  "hospital_course": "Patient is slightly more alert and eating better. Delirium is improving, likely due to a UTI, for which empirical trimethoprim was commenced pending culture results. INR is now 3.9, down from 4.8, and warfarin has been held with plans to restart at a reduced dose when INR is in range. Atrial fibrillation is rate controlled with no cardioversion planned. A physiotherapy review has been requested due to falls risk.",
+  "procedures": [],
+  "reconciliation_report": {
+    "admission_medications": [
+      {
+        "name": "Warfarin",
+        "dose": "5mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "atrial fibrillation",
+        "source_document": "admission_note.pdf",
+        "raw_text": "Warfarin 5mg daily (INR target 2.0-3.0)"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Amlodipine 5mg daily"
+      },
+      {
+        "name": "Donepezil",
+        "dose": "10mg",
+        "frequency": "nightly",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Donepezil 10mg nightly"
+      },
+      {
+        "name": "Calcium + Vitamin D supplement",
+        "dose": null,
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "admission_note.pdf",
+        "raw_text": "Calcium + Vitamin D supplement daily"
+      },
+      {
+        "name": "Ibuprofen",
+        "dose": "400mg",
+        "frequency": "PRN",
+        "route": null,
+        "indication": "knee pain",
+        "source_document": "admission_note.pdf",
+        "raw_text": "Ibuprofen 400mg PRN (prescribed by GP for knee pain)"
+      }
+    ],
+    "discharge_medications": [
+      {
+        "name": "Warfarin",
+        "dose": "3mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "dose adjusted due to supratherapeutic INR",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "Warfarin 3mg daily (REDUCED from 5mg \u00b7 dose adjusted due to supratherapeutic INR)"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "Amlodipine 5mg daily \u00b7 continue"
+      },
+      {
+        "name": "Donepezil",
+        "dose": "10mg",
+        "frequency": "nightly",
+        "route": null,
+        "indication": null,
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "Donepezil 10mg nightly \u00b7 continue"
+      },
+      {
+        "name": "Calcium + Vitamin D supplement",
+        "dose": null,
+        "frequency": "daily",
+        "route": null,
+        "indication": null,
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "Calcium + Vitamin D supplement daily \u00b7 continue"
+      },
+      {
+        "name": "Trimethoprim",
+        "dose": "200mg",
+        "frequency": "twice daily",
+        "route": null,
+        "indication": "for UTI",
+        "source_document": "discharge_medications.pdf",
+        "raw_text": "Trimethoprim 200mg twice daily \u00b7 complete 7-day course (for UTI)"
+      },
+      {
+        "name": "trimethoprim",
+        "dose": "200mg",
+        "frequency": "twice daily",
+        "route": null,
+        "indication": "UTI",
+        "source_document": "progress_note_1.pdf",
+        "raw_text": "Commenced empirical trimethoprim 200mg twice daily for UTI pending culture."
+      },
+      {
+        "name": "warfarin",
+        "dose": null,
+        "frequency": null,
+        "route": null,
+        "indication": "supratherapeutic INR",
+        "source_document": "progress_note_1.pdf",
+        "raw_text": "Warfarin held."
+      },
+      {
+        "name": "amoxicillin-clavulanate",
+        "dose": null,
+        "frequency": null,
+        "route": "IV",
+        "indication": "Community-acquired pneumonia",
+        "source_document": "progress_note_2.pdf",
+        "raw_text": "Started on IV amoxicillin-clavulanate."
+      },
+      {
+        "name": "warfarin",
+        "dose": "3mg",
+        "frequency": "daily",
+        "route": null,
+        "indication": "INR was supratherapeutic, dose reduction appropriate.",
+        "source_document": "progress_note_2.pdf",
+        "raw_text": "Restarting warfarin at 3mg daily (reduced from 5mg)."
+      }
+    ],
+    "changes": [
+      {
+        "medication_name": "Donepezil",
+        "change_type": "unchanged",
+        "admission_value": null,
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Amlodipine",
+        "change_type": "unchanged",
+        "admission_value": null,
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "warfarin",
+        "change_type": "dose_changed",
+        "admission_value": "5mg",
+        "discharge_value": "3mg",
+        "reason_documented": true,
+        "reason_text": "INR was supratherapeutic, dose reduction appropriate.",
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Ibuprofen",
+        "change_type": "discontinued",
+        "admission_value": "400mg PRN",
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": true,
+        "clinician_note": "Ibuprofen discontinued \u2014 reason not documented in discharge record"
+      },
+      {
+        "medication_name": "amoxicillin-clavulanate",
+        "change_type": "added",
+        "admission_value": null,
+        "discharge_value": "",
+        "reason_documented": true,
+        "reason_text": "Community-acquired pneumonia",
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "Calcium + Vitamin D supplement",
+        "change_type": "unchanged",
+        "admission_value": null,
+        "discharge_value": null,
+        "reason_documented": false,
+        "reason_text": null,
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      },
+      {
+        "medication_name": "trimethoprim",
+        "change_type": "added",
+        "admission_value": null,
+        "discharge_value": "200mg twice daily",
+        "reason_documented": true,
+        "reason_text": "UTI",
+        "flag_for_reconciliation": false,
+        "clinician_note": ""
+      }
+    ],
+    "unresolved_flags": [
+      "Ibuprofen discontinued without documented reason"
+    ],
+    "reconciliation_complete": false,
+    "notes": "1 items require clinician review"
+  },
+  "allergies": [
+    "NKDA"
+  ],
+  "discharge_condition": "Improved",
+  "follow_up_instructions": [
+    "INR check with GP in 3 days (2024-11-11) \u00b7 warfarin dose may need further adjustment",
+    "Urine culture result to be reviewed by GP \u00b7 action if sensitivity changes antibiotic",
+    "Blood culture result pending \u00b7 review with GP",
+    "Cardiology follow-up for atrial fibrillation in 4 weeks",
+    "Falls assessment at home \u00b7 community OT referral sent",
+    "Cognitive review \u00b7 memory clinic referral submitted"
+  ],
+  "pending_results": [
+    "Blood culture result",
+    "3. Blood culture result pending \u00b7 review with GP",
+    "Urine culture",
+    "Urine culture: PENDING \u00b7 sent yesterday",
+    "Commenced empirical trimethoprim 200mg twice daily for UTI pending culture.",
+    "Blood culture",
+    "3. Urine culture: PENDING \u00b7 still awaiting result.",
+    "4. Blood culture: PENDING \u00b7 sent on Day 2 due to persistent low-grade fever."
+  ],
+  "conflicts_detected": [],
+  "missing_fields": [],
+  "clinician_review_flags": [
+    "Medication 'trimethoprim' from 'progress_note_1.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'warfarin' from 'progress_note_1.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'amoxicillin-clavulanate' from 'progress_note_2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Medication 'warfarin' from 'progress_note_2.pdf' \u2014 could not determine admission vs discharge \u2014 added to discharge list",
+    "Agent encountered unexpected error: 'charmap' codec can't encode characters in position 2-3: character maps to <undefined>",
+    "Multiple principal diagnoses found \u2014 using highest confidence: 'Delirium \u00b7 likely precipitated by urinary tract infection vs medication effect'"
+  ],
+  "hallucination_warnings": [],
+  "evidence_map": {
+    "demographics:name:Margaret Chen": [
+      "c5f0a48a"
+    ],
+    "demographics:date_of_birth:1948-07-22": [
+      "245065c7"
+    ],
+    "demographics:mrn:002-456-789": [
+      "cef8522d"
+    ],
+    "demographics:sex:Female": [
+      "3a62feb5"
+    ],
+    "demographics:age:76": [
+      "078131e6"
+    ],
+    "diagnosis:principal:Delirium \u00b7 likely precipitated by urinary tract infection vs medication effect": [
+      "6fbdf4d6"
+    ],
+    "diagnosis:secondary:Atrial fibrillation \u00b7 rate controlled": [
+      "4cef6672"
+    ],
+    "diagnosis:secondary:Supratherapeutic INR: INR 4.8 on admission (TARGET: 2.0-3.0)": [
+      "d14454f6"
+    ],
+    "medication:Warfarin": [
+      "a6ecf140",
+      "ecbdf6f2"
+    ],
+    "medication:Amlodipine": [
+      "54f7814b",
+      "4b709da4"
+    ],
+    "medication:Donepezil": [
+      "3833b886",
+      "1c04d72a"
+    ],
+    "medication:Calcium + Vitamin D supplement": [
+      "7e896655",
+      "95d8bdf1"
+    ],
+    "medication:Ibuprofen": [
+      "52150d9a"
+    ],
+    "hospital_course": [
+      "be3fd29a",
+      "e74a598e",
+      "dd7963e6",
+      "bb1a5e4d"
+    ],
+    "allergy:NKDA": [
+      "d8d9809a",
+      "4280aa11",
+      "f392f9c6",
+      "1b1aac13"
+    ],
+    "diagnosis:secondary:supratherapeutic INR": [
+      "8a10d8a6"
+    ],
+    "diagnosis:secondary:UTI": [
+      "db342308"
+    ],
+    "diagnosis:secondary:atrial fibrillation": [
+      "a1aa17f4"
+    ],
+    "medication:Trimethoprim": [
+      "133b1ff2"
+    ],
+    "discharge_condition:Improved": [
+      "ba491ba3"
+    ],
+    "follow_up:INR check with GP in 3 days (2024-11-11) \u00b7 warfarin dose may": [
+      "d5da2c7f"
+    ],
+    "follow_up:Urine culture result to be reviewed by GP \u00b7 action if sensit": [
+      "b826258d"
+    ],
+    "follow_up:Blood culture result pending \u00b7 review with GP": [
+      "39e117e9"
+    ],
+    "follow_up:Cardiology follow-up for atrial fibrillation in 4 weeks": [
+      "9af1dfcb"
+    ],
+    "follow_up:Falls assessment at home \u00b7 community OT referral sent": [
+      "071d3049"
+    ],
+    "follow_up:Cognitive review \u00b7 memory clinic referral submitted": [
+      "2004062c"
+    ],
+    "diagnosis:principal:Delirium": [
+      "b9b16c82"
+    ],
+    "diagnosis:secondary:Supratherapeutic INR": [
+      "4c9e1787"
+    ],
+    "diagnosis:secondary:Atrial fibrillation": [
+      "a6ce0e4a"
+    ],
+    "diagnosis:secondary:Falls risk": [
+      "50501cc7"
+    ],
+    "medication:trimethoprim": [
+      "f2d841cf"
+    ],
+    "medication:warfarin": [
+      "80c1a674",
+      "9c4aa6ab"
+    ],
+    "diagnosis:principal:Community-acquired pneumonia": [
+      "9777ff5f"
+    ],
+    "diagnosis:principal:UTI": [
+      "c0b3c883"
+    ],
+    "medication:amoxicillin-clavulanate": [
+      "ea521cc7"
+    ]
+  },
+  "agent_iterations": 5,
+  "escalated": true,
+  "draft_status": "draft_for_clinician_review"
+}
