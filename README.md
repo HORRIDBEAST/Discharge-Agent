@@ -370,27 +370,6 @@ discharge_agent/
 | Correction memory as JSON store | Simple, inspectable, version-controllable learning artefact |
 | Simulated reviewer with deterministic policy | Reproducible evaluation; improvement curve is real not noisy |
 
----
-
-## What I Would Do With More Time
-
-1. **Sentence-level evidence validation** — validate individual sentences in the hospital course narrative against specific evidence records, not just at field level.
-
-2. **Real OCR integration** — pytesseract or AWS Textract for genuinely scanned PDFs.
-
-3. **Structured entity extraction** — dedicated NER model (e.g., Med7, scispaCy) to supplement LLM extraction for medications and diagnoses.
-
-4. **Temporal reasoning** — build explicit patient timeline, detect when lab values are pre/post-procedure.
-
-5. **Preference fine-tuning (DPO)** — with more (draft, edited) pairs, train a small adapter that internalises reviewer preferences without prompt injection.
-
-6. **Production escalation** — real integration with Epic/Cerner FHIR APIs for workflow-native escalation.
-
-7. **Multi-reviewer support** — different reviewers have different styles; the memory store should be keyed by reviewer identity.
-
-8. **Human-in-the-loop UI** — a clinician review interface where edits are captured automatically as training signal.
-
----
 
 ## Known Limitations
 
